@@ -19,7 +19,7 @@ public class User {
     private String name;
 
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
-    @JsonIgnoreProperties({"user"})
+    @JsonIgnoreProperties({"users"})
     private List<Folder> folders;
 
     public User(String name) {
