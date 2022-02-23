@@ -9,7 +9,9 @@ import com.codeclan.example.filefolder.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DataLoader implements ApplicationRunner {
 
     @Autowired
@@ -58,6 +60,6 @@ public class DataLoader implements ApplicationRunner {
         File week4 = new File("Week4",".pdf","480GB",reference);
         fileRepository.save(week4);
 
-        
+
     }
 }
